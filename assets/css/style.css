@@ -103,8 +103,8 @@ main {
     position: relative;
 }
 
-/* Final rgba value sets the opacity so it is semi-transparent */
 #cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
@@ -117,7 +117,7 @@ main {
 
 #cover-text>h2,
 #cover-text>h3 {
-    color: #ffffff
+    color: #ffffff;
 }
 
 /* Reasons section */
@@ -139,17 +139,17 @@ main {
 }
 
 #benefits p {
-    padding-right: 0 20px;
+    padding: 0 20px;
 }
 
 hr {
     border-top: 1px solid #3a3a3a;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 /* Reasons circular image */
 #circle-cover-bg {
-    background: url("../images/reasons-image.webp") no-repeat top center/cover;
+    background: url("../images/reasons-image.webp") no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
@@ -191,8 +191,18 @@ hr {
     color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+
 /* Footer */
-footer {
     #social-networks {
         text-align: center;
         padding: 20px 0;
@@ -200,7 +210,6 @@ footer {
         justify-content: space-evenly;
         list-style-type: none;
     }
-}
 
 #social-networks i {
     font-size: 160%;
@@ -259,17 +268,15 @@ footer {
         width: 100%;
     }
 
-    #benefits-physical>div,
-    #benefits-mental>div {
+    #benefits-physical > div,
+    #benefits-mental > div {
         width: 75%;
     }
 
-    #benefits-mental>div {
+    #benefits-mental > div {
         text-align: end;
         align-self: flex-end;
     }
-
-}
 
 }
 
